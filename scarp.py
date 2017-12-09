@@ -7,7 +7,7 @@ from tabulate import tabulate
 
 def main():
     
-    #show in terminal as tabulate form !
+    #show in terminal as tabulate form !!
     res = requests.get("http://www.rajkotbusinessguide.com/categories/Precision/251")
     soup = BeautifulSoup(res.content,'lxml')
     table = soup.find_all('table')[6] 
